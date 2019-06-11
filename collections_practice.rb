@@ -23,8 +23,8 @@ end
 
 def swap_elements(array)
   array.each_with_index.collect do |item, index|
+    binding.pry
     if index == 1 
-      binding.pry
       index + 1 
       item 
     elsif index == 2 
