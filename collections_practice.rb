@@ -26,6 +26,7 @@ def swap_elements(array)
     if index == 1 
       index + 1 
       item 
+      binding.pry
     elsif index == 2 
       index - 1 
       item 
