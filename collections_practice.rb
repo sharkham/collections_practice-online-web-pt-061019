@@ -1,3 +1,5 @@
+require 'pry'
+
 def sort_array_asc(array)
   array.sort do |a, b|
     a <=> b
@@ -23,10 +25,10 @@ end
 
 def swap_elements(array)
   array.each_with_index.collect do |item, index|
-    binding.pry
     if index == 1 
       index + 1 
       item 
+      binding.pry
     elsif index == 2 
       index - 1 
       item 
